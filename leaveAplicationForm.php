@@ -208,49 +208,49 @@ else{
       <!-- error message if type of absence isn't selected -->
       <span class="error"><?php echo "&nbsp;".$absenceErr ?></span><br/>
       <div class="form-check">
-        <input class="form-check-input" name="absence[]" type="checkbox" value="Sick" id="Sick">
+        <input class="form-check-input" name="absence[]" type="radio" value="Sick" id="Sick">
         <label class="form-check-label" for="Sick">
           Sick
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" name="absence[]" type="checkbox" value="Casual" id="Casual">
+        <input class="form-check-input" name="absence[]" type="radio" value="Casual" id="Casual">
         <label class="form-check-label" for="Casual">
           Casual
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" name="absence[]" type="checkbox" value="Vacation" id="Vacation">
+        <input class="form-check-input" name="absence[]" type="radio" value="Vacation" id="Vacation">
         <label class="form-check-label" for="Vacation">
           Vacation
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" name="absence[]" type="checkbox" value="Bereavement" id="Bereavement">
+        <input class="form-check-input" name="absence[]" type="radio" value="Bereavement" id="Bereavement">
         <label class="form-check-label" for="Bereavement">
           Bereavement
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" name="absence[]" type="checkbox" value="Time off without pay" id="Time Off Without Pay">
+        <input class="form-check-input" name="absence[]" type="radio" value="Time off without pay" id="Time Off Without Pay">
         <label class="form-check-label" for="Time Off Without Pay">
           Time off without pay
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" name="absence[]" type="checkbox" value="Maternity / Paternity" id="Maternity/Paternity">
+        <input class="form-check-input" name="absence[]" type="radio" value="Maternity / Paternity" id="Maternity/Paternity">
         <label class="form-check-label" for="Maternity/Paternity">
           Maternity / Paternity
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" name="absence[]" type="checkbox" value="Sabbatical" id="Sabbatical">
+        <input class="form-check-input" name="absence[]" type="radio" value="Sabbatical" id="Sabbatical">
         <label class="form-check-label" for="Sabbatical">
           Sabbatical
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" name="absence[]" type="checkbox" value="Other" id="Other">
+        <input class="form-check-input" name="absence[]" type="radio" value="Other" id="Other">
         <label class="form-check-label" for="Other">
           Others
         </label>
