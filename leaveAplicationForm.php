@@ -250,7 +250,7 @@ else{
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" name="absence[]" type="radio" value="Other" id="Other">
+        <input class="form-check-input" name="absence[]" type="checkbox" value="Other" id="Other">
         <label class="form-check-label" for="Other">
           Others
         </label>
