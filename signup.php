@@ -68,7 +68,6 @@ session_start();
 </head>
 
 <body>
-<!-- php code -->
   <?php
   $nameErr = $emailErr = $phoneErr = $passwordErr = $repasswordErr = $genderErr = "";
   $fullname = $username = $email = $phone = $password = $repassword = $gender = "";
@@ -166,7 +165,7 @@ error_reporting(E_ALL);
   ?>
 
 
-  <!-- navbar -->
+
   <nav class="navbar header-nav navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Student Leave Application</a>
@@ -181,45 +180,39 @@ error_reporting(E_ALL);
     <div class="alert alert-danger" id="err" role="alert">
     </div>
   
-    <!--form-->
     <form method="POST" autocomplete="off">
   
-      <!--Name-->
+      
       <div class="form-floating mb-3">
         <input type="text" class="form-control" name="fullname" id="fullname" value="<?php echo $fullname; ?>"placeholder="Fullname">
         <label for="Fullname">Fullname</label>
         <span class="error"><?php echo $nameErr; ?></span>
       </div>
   
-      <!--username-->
       <div class="form-floating mb-3">
         <input type="text" class="form-control" name="username" id="username" value="<?php echo $username; ?>"placeholder="Username">
         <label for="username">Username</label>
         <span class="error"><?php echo $nameErr; ?></span>
       </div>
   
-      <!--Email id-->
       <div class="form-floating mb-3">
         <input class="form-control" type="text" name="email" id="email" value="<?php echo $email; ?>" placeholder="Enter your email">
         <label for="email">Email address</label>
         <span class="error"><?php echo $emailErr; ?></span>
       </div>
   
-      <!--Phone No.-->
       <div class="form-floating mb-3">
         <input class="form-control" type="tel" name="phone" id="phone" value="<?php echo $phone; ?>" placeholder="Enter your Phone no.">
         <label for="phone">Phone No.</label>
         <span class="error"><?php echo $phoneErr; ?></span>
       </div>
   
-      <!--Password.-->
       <div class="form-floating mb-3">
         <input class="form-control" type="password" name="password" id="password" value="<?php echo $password; ?>" placeholder="Enter your password">
         <label for="password">Password</label>
         <span class="error"><?php echo $passwordErr; ?></span>
       </div>
   
-      <!--Confirm Password.-->
       <div class="form-floating mb-3">
         <input class="form-control" type="password" name="repassword" id="confirmPassword" value="<?php echo $repassword ?>" placeholder="Re-Enter password">
         <label for="confirmPassword">Confirm Password</label>
@@ -245,13 +238,7 @@ error_reporting(E_ALL);
         <option>Goa</option>
         <option>Delhi</option>
         <option>Noida</option>
-        <!-- <option>Philadelphia</option>
-        <option>Atlanta</option>
-        <option>Nashville</option>
-        <option>San Diego</option>
-        <option>Tucson</option>
-        <option>Omaha</option>
-        <option>Memphis</option> -->
+        
       </select>
       </div>
   
@@ -263,9 +250,7 @@ error_reporting(E_ALL);
         <option>CSE-AI</option>
         <option>ECE</option>
         <option>MECH</option>
-        <!-- <option>Finance</option>
-        <option>Marketing and Sales</option>
-        <option>Customer Support</option> -->
+      
       </select>
       </div>
   
@@ -277,7 +262,6 @@ error_reporting(E_ALL);
 
 
 
-  <!--Footer-->
   <footer class="footer navbar navbar-expand-lg navbar-light bg-light" style="color:white;">
   <div>
     <p class="text-center">&copy; <?php echo date("Y"); ?> - Student Leave Application</p>
