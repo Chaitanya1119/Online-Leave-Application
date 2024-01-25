@@ -68,7 +68,6 @@ session_start();
 </head>
 
 <body>
-<!-- php code -->
   <?php
   $nameErr = $emailErr = $phoneErr = $passwordErr = $repasswordErr = $genderErr = "";
   $fullname = $username = $email = $phone = $password = $repassword = $gender = "";
@@ -165,8 +164,6 @@ ini_set('display_errors', true);
 error_reporting(E_ALL);
   ?>
 
-
-  <!-- navbar -->
   <nav class="navbar header-nav navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Student Leave Application</a>
@@ -181,7 +178,6 @@ error_reporting(E_ALL);
     <div class="alert alert-danger" id="err" role="alert">
     </div>
   
-    <!--form-->
     <form method="POST" autocomplete="off">
   
       <!--Name-->
@@ -245,13 +241,6 @@ error_reporting(E_ALL);
         <option>Goa</option>
         <option>Delhi</option>
         <option>Noida</option>
-        <!-- <option>Philadelphia</option>
-        <option>Atlanta</option>
-        <option>Nashville</option>
-        <option>San Diego</option>
-        <option>Tucson</option>
-        <option>Omaha</option>
-        <option>Memphis</option> -->
       </select>
       </div>
   
@@ -263,9 +252,6 @@ error_reporting(E_ALL);
         <option>CSE-AI</option>
         <option>ECE</option>
         <option>MECH</option>
-        <!-- <option>Finance</option>
-        <option>Marketing and Sales</option>
-        <option>Customer Support</option> -->
       </select>
       </div>
   
@@ -274,10 +260,6 @@ error_reporting(E_ALL);
       <input type="submit" name="submit" value="Submit" class="btn btn-success">
     </form>
   </div>
-
-
-
-  <!--Footer-->
   <footer class="footer navbar navbar-expand-lg navbar-light bg-light" style="color:white;">
   <div>
     <p class="text-center">&copy; <?php echo date("Y"); ?> - Student Leave Application</p>

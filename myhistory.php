@@ -109,7 +109,6 @@ else{
               <th>Status</th>
           </thead>
           <tbody>
-            <!-- loading all leave applications of the user -->
             <?php
                   $leaves = mysqli_query($conn,"SELECT * FROM leaves WHERE eid='".$_SESSION['sess_eid']."'");
                   if($leaves){
