@@ -47,7 +47,7 @@
 					
 					$_SESSION['sess_user']=$username;
 					$_SESSION['sess_eid']=$id;
-					//Redirect Browser
+					
 					if($type=="admin"){
 						header("Location:admin.php");
 					}
@@ -58,7 +58,7 @@
 				}
 			}
 			else{
-	 			//echo "Invalid Username or Password";
+	 			
                  return false;
                  
 	 		}
