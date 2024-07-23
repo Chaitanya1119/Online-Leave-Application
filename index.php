@@ -42,8 +42,6 @@ session_start();
      
 
 <body>
-
-    <!-- header -->
     <nav class="navbar header-nav navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Student Leave Application</a>
@@ -51,24 +49,11 @@ session_start();
             <a id="register" href="signup.php">Sign Up</a>
         </div>
     </nav>
-    <!-- header ends -->
-
-
-   
-
-    <!-- body -->
     <div class="container-fluid">
         <div class="row">
-            <!-- container and row divs for responsive -->
-
-            <!-- leftComponent -->
             <div class="leftComponent col-md-5">
                 <img src="img/image.jpg" alt="Leave Image" class="img-fluid">
             </div>
-            <!-- leftComponent ends -->
-
-
-            <!-- rightComponent -->
             <div class="rightComponent col-md-5">
 
                 <h3>Please login to continue. . .</h3>
@@ -95,23 +80,8 @@ session_start();
                     <input type="submit" class="btn btn-success" name="login" value="Log In">
                 </form>
             </div>
-            <!-- rightComponent ends -->
         </div>
     </div>
-    <!-- body ends -->
-
-
-    <!-- <div class="content2">
-        <p class="heading lead text-start">
-            Simple yet effective software for leave management system
-        </p>
-        <p class="text-start">
-            Every organization may have different needs, so while picking on a leave management software, it will be
-            smart to choose a leave solution that provides the basic requirements while offering the flexibility to
-            customize the leave process. With greytHR managing employee leave is effortless with an all-rounded HR
-            management software.
-        </p>
-    </div> -->
 
     <footer class="footer navbar navbar-expand-lg navbar-light bg-light" style="color:white;">
     <div>

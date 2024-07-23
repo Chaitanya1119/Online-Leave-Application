@@ -2,7 +2,6 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-
 CREATE TABLE `leaves` (
   `id` int(11) NOT NULL,
   `eid` int(11) NOT NULL COMMENT 'Employee ID',

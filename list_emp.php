@@ -48,6 +48,7 @@ else{
         <div class="container-fluid">
         
             <a class="navbar-brand" href="admin.php">Student Leave Application</a>
+           
 
             <ul class="nav justify-content-end">
 

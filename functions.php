@@ -47,6 +47,7 @@
 					
 					$_SESSION['sess_user']=$username;
 					$_SESSION['sess_eid']=$id;
+					
 					if($type=="admin"){
 						header("Location:admin.php");
 					}
@@ -57,6 +58,7 @@
 				}
 			}
 			else{
+	 			
                  return false;
                  
 	 		}
