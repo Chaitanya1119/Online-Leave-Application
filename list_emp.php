@@ -48,7 +48,13 @@ else{
         <div class="container-fluid">
         
             <a class="navbar-brand" href="admin.php">Student Leave Application</a>
-           
+            <!-- <button class="btn-default" onclick="window.location.href='leavehist.php';">Leave History</button> </div> -->
+            <!-- <nav class="nav navbar-right">
+            <a class="nav-link active" href="#">Active</a>
+            
+            </nav>
+
+            <button id="logout" onclick="window.location.href='logout.php';">Logout</button> </div> -->
 
             <ul class="nav justify-content-end">
 
@@ -84,6 +90,7 @@ else{
                       <th>Action</th>
                   </thead>
                   <tbody>
+                    <!-- loading all leave applications of the user -->
                     <?php
                           $leaves = mysqli_query($conn,"SELECT * FROM users WHERE type = 'Employee'");
                           if($leaves){
@@ -120,8 +127,8 @@ else{
 
     <footer class="footer navbar navbar-expand-lg navbar-light bg-light" style="color:white;">
     <div>
-    <p class="text-center">&copy; <?php echo date("Y"); ?> - Student Leave Application</p>
-      <p class="text-center">Developed By Chaitanya</p>
+    <p class="text-center"> Student Leave Application</p>
+      <p class="text-center">Developed By Chaitanya Vutukuri</p>
     </div>
     </footer>
 </body>

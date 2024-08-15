@@ -23,8 +23,8 @@
     }
 
     function passwordCheck($password, $existingHash){
-        $Hash = crypt($password, $existingHash);
-        if($Hash === $existingHash)
+        // $Hash = crypt($password, $existingHash);
+        if($password === $existingHash)
             return true;
         else
             return false;
@@ -47,7 +47,7 @@
 					
 					$_SESSION['sess_user']=$username;
 					$_SESSION['sess_eid']=$id;
-					
+					//Redirect Browser
 					if($type=="admin"){
 						header("Location:admin.php");
 					}
@@ -58,16 +58,16 @@
 				}
 			}
 			else{
-	 			
+	 			//echo "Invalid Username or Password";
                  return false;
                  
 	 		}
     }
 
     function signup($fullname,$name,$email,$password,$phone,$repassword,$gender,$city,$dept,$type,$conn){
-        $hashedPassword = encryption($password);
+        // $hashedPassword = encryption($password);
 
-        $query = mysqli_query($conn,"INSERT INTO users(fullname, name, email, phone, password, gender, city, department, type) VALUES('$fullname','$name','$email','$phone','$hashedPassword','$gender','$city','$dept','$type')");
+        $query = mysqli_query($conn,"INSERT INTO users(fullname, name, email, phone, password, gender, city, department, type) VALUES('$fullname','$name','$email','$phone','$password','$gender','$city','$dept','$type')");
         $query1 = mysqli_query($conn,"SELECT id from users WHERE name='".$name."'");
         $eid = mysqli_fetch_assoc($query1);
 
@@ -83,7 +83,7 @@
             exit;
         }
         else{
-            echo "Query Error : " . "INSERT INTO users(fullname, name, email, phone, password, gender, city, department, type) VALUES('$fullname','$name','$email','$phone','$hashedPassword','$gender','$city','$dept','$type')" . "<br>" . mysqli_error($conn);
+            echo "Query Error : " . "INSERT INTO users(fullname, name, email, phone, password, gender, city, department, type) VALUES('$fullname','$name','$email','$phone','$password','$gender','$city','$dept','$type')" . "<br>" . mysqli_error($conn);
             echo "<br>";
             echo "Query Error : " . "SELECT id from users WHERE name='".$name."'" . "<br>" . mysqli_error($conn);
         }

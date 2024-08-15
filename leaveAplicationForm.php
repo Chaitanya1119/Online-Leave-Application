@@ -281,8 +281,8 @@ else{
 
   <footer class="footer navbar navbar-expand-lg navbar-light bg-light" style="color:white;">
     <div>
-    <p class="text-center">&copy; <?php echo date("Y"); ?> - Student Leave Application</p>
-      <p class="text-center">Developed By Chaitanya</p>
+    <p class="text-center"> Student Leave Application</p>
+      <p class="text-center">Developed By Chaitanya Vutukuri</p>
     </div>
   </footer>
 
