@@ -1,0 +1,14 @@
+http://localhost/Online-Leave-Application/index.php
+
+**Database Name: onlineleavedb**
+
+**Admin Login Details**
+
+Username: chaithu
+Password: chaithu123
+
+**Student Login Details**
+
+Username: pavan
+Password: pavan123
+
